@@ -18,29 +18,26 @@ paths:
               properties:
                 event_title:
                   type: string
-                  description: Title of the event, e.g., "Doctor Appointment with Dr. Smith"
+                  description: Title of the event (e.g., Doctor Appointment with Dr. Smith)
                 start_time:
                   type: string
-                  description: Start time in ISO 8601 format, e.g., "2025-04-27T15:00:00"
+                  description: ISO 8601 Start Time (e.g., 2025-04-30T13:00:00)
                 end_time:
                   type: string
-                  description: End time in ISO 8601 format, e.g., "2025-04-27T16:00:00"
+                  description: ISO 8601 End Time (e.g., 2025-04-30T14:00:00)
                 location:
                   type: string
-                  description: Address or location of the event
+                  description: Location of the event
                 doctor_name:
                   type: string
-                  description: Doctor's name if applicable
+                  description: Name of the doctor
                 phone_number:
                   type: string
-                  description: Phone number associated with the appointment
+                  description: Phone number
                 notes:
                   type: string
-                  description: Additional notes about the event
+                  description: Additional notes
               required:
                 - event_title
                 - start_time
                 - end_time
-      responses:
-        '200':
-          description: Successfully created event
