@@ -27,16 +27,16 @@ paths:
                   description: ISO 8601 End Time (e.g., 2025-04-30T14:00:00)
                 location:
                   type: string
-                  description: Location of the event
+                  description: Location of the event (e.g., 123 Oak Street, Springfield)
                 doctor_name:
                   type: string
-                  description: Name of the doctor
+                  description: Name of the doctor (e.g., Dr. Smith)
                 phone_number:
                   type: string
-                  description: Phone number
+                  description: Phone number associated with the appointment
                 notes:
                   type: string
-                  description: Additional notes
+                  description: Additional notes (e.g., "Bring insurance card")
               required:
                 - event_title
                 - start_time
